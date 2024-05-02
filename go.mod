@@ -1,10 +1,13 @@
 module github/pbreedt/ai-text-extract
 
-go 1.21.5
+go 1.22
+
+toolchain go1.22.2
 
 require (
 	cloud.google.com/go/vertexai v0.7.1
 	github.com/google/generative-ai-go v0.11.0
+	github.com/ollama/ollama v0.1.32
 	google.golang.org/api v0.177.0
 )
 

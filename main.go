@@ -7,10 +7,10 @@ const (
 )
 
 func main() {
-	file := "./data/test.png"
-	fileMime := mimePdf
+	file := "./data/test_form.png"
+	fileMime := mimePng
 
-	// Useful with PDF doc:
+	// Useful prompt sections:
 	//   'top to bottom' - provide better output when large spaces between text, like tables or lists
 	//   'Do not add any word of your own' - prevents intro text like "## The text from the image ##"
 	//   'Detect any text in the provided image' - For some images, Vertex needed to first describe the image before the text can be extracted!
@@ -21,4 +21,6 @@ func main() {
 	runGenAI(model, prompt, file, fileMime)
 	model = "gemini-1.5-pro-preview-0409"
 	runVertexAI(model, prompt, file, fileMime)
+	// model := "llava"
+	// runOllama(model, prompt, file, fileMime) // ~2 min response time
 }
