@@ -1,4 +1,4 @@
-# ai-text-extrace
+# ai-text-extract
 > A package to wrap services from different cloud providers in a common, simplified interface
 
 ## General info
